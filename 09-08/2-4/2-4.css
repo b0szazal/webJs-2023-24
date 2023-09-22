@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: yellow;
+    justify-content: flex-end;
+}
+.flex{
+    flex: flex;
+    height: 100px;
+    width: 100px;
+}
+.lila{
+    background-color: purple;
+    align-self: flex-end;
+}

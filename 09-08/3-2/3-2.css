@@ -1,0 +1,42 @@
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 5px;
+}
+body{
+    margin: 0;
+}
+main{
+    height: 600px;
+}
+
+.green{
+    background-color: green;
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.yellow{
+    background-color: yellow;
+    flex: 2;
+}
+.purple{
+    background-color: purple;
+    height: 50px;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right:5%;
+}
+.cyan{
+    background-color: cyan;
+    flex: flex;
+    width: 100px;
+    height: 35px;
+    align-self: center;
+    margin: 20px;
+}
+footer{
+    background-color: gray;
+    height: 50px;
+}
