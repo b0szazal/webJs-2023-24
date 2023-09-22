@@ -10,6 +10,9 @@ body{
 main{
     height: 600px;
 }
+header{
+    min-height: 75px;
+}
 
 .green{
     background-color: green;
@@ -19,11 +22,10 @@ main{
 }
 .yellow{
     background-color: yellow;
-    flex: 2;
+    flex: 3;
 }
 .purple{
     background-color: purple;
-    height: 50px;
     justify-content: flex-start;
     padding-left: 5%;
     padding-right:5%;
@@ -31,7 +33,7 @@ main{
 .cyan{
     background-color: cyan;
     flex: flex;
-    width: 100px;
+    width: 90px;
     height: 35px;
     align-self: center;
     margin: 20px;
