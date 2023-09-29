@@ -8,12 +8,13 @@ body{
     background-image: url("kepek/backimg.png ");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 div{
     min-width: 250px;
     margin: auto;
-    width: 15%;
+    width: 17%;
     max-height: 75px;
     height: fit-content;
 }
@@ -53,10 +54,11 @@ div{
 
 .innercontainer{
     flex-direction: column;
-    max-height: 150px;
-    height: 150px;
-    margin-top: 25px;
+    max-height: 250px;
+    height: 250px;
     border-radius: 25px;
+    margin: auto;
+    border: 25px;
 }
 
 .outercontainer{
@@ -68,5 +70,5 @@ div.outercontainer>div.innercontainer>div{
 }
 
 footer{
-    margin-left: 10%;
+    margin-left: 20%;
 }

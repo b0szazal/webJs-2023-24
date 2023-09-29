@@ -1,15 +1,31 @@
 let header=document.getElementById("header");
-let lightdarkmodes=document.getElementsByClassName("light");
+let hetfo=document.getElementById("hetfo");
+let kedd=document.getElementById("kedd");
+let szerda=document.getElementById("szerda");
+let csutortok=document.getElementById("csutortok");
+let pentek=document.getElementById("pentek");
+let szombat=document.getElementById("szombat");
+let vasarnap=document.getElementById("vasarnap");
 let moonimg=document.getElementById("lighttodark");
 let sunimg=document.getElementById("darktolight")
 
 function DarkMode(){
     header.classList.remove("light");
     header.classList.add("dark");
-    for(let i=0; i<lightdarkmodes.length; i++){
-        lightdarkmodes[i].classList.add("light");
-        lightdarkmodes[i].classList.remove("dark");
-    }
+    hetfo.classList.remove("light");
+    hetfo.classList.add("dark");
+    kedd.classList.remove("light");
+    kedd.classList.add("dark");
+    szerda.classList.remove("light");
+    szerda.classList.add("dark");
+    csutortok.classList.remove("light");
+    csutortok.classList.add("dark");
+    pentek.classList.remove("light");
+    pentek.classList.add("dark");
+    szombat.classList.remove("light");
+    szombat.classList.add("dark");
+    vasarnap.classList.remove("light");
+    vasarnap.classList.add("dark");
     moonimg.classList.add("gone");
     sunimg.classList.remove("gone");
 }
@@ -17,10 +33,20 @@ function DarkMode(){
 function LightMode(){
     header.classList.remove("dark");
     header.classList.add("light");
-    for(let i=0; i<lightdarkmodes.length; i++){
-        lightdarkmodes[i].classList.add("dark");
-        lightdarkmodes[i].classList.remove("light");
-    }
+    hetfo.classList.remove("dark");
+    hetfo.classList.add("light");
+    kedd.classList.remove("dark");
+    kedd.classList.add("light");
+    szerda.classList.remove("dark");
+    szerda.classList.add("light");
+    csutortok.classList.remove("dark");
+    csutortok.classList.add("light");
+    pentek.classList.remove("dark");
+    pentek.classList.add("light");
+    szombat.classList.remove("dark");
+    szombat.classList.add("light");
+    vasarnap.classList.remove("dark");
+    vasarnap.classList.add("light");
     moonimg.classList.remove("gone");
     sunimg.classList.add("gone");
 }
