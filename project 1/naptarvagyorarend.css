@@ -58,7 +58,7 @@ div{
     height: 250px;
     border-radius: 25px;
     margin: auto;
-    border: 25px;
+    margin-top: 25px;
 }
 
 .outercontainer{
@@ -71,4 +71,9 @@ div.outercontainer>div.innercontainer>div{
 
 footer{
     margin-left: 20%;
+}
+
+.nap{
+    font-weight: bold;
+    font-size: larger;
 }
