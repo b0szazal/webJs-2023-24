@@ -4,6 +4,20 @@
     border: 0;
 }
 
+body{
+    background-image: url("kepek/backimg.png ");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    min-width: 250px;
+    margin: auto;
+    width: 15%;
+    max-height: 75px;
+    height: fit-content;
+}
+
 .light{
     background-color: white;
     color: black;
@@ -14,20 +28,44 @@
     color: white;
 }
 
-header{
+#header{
     max-width: 80%;
     height: 75px;
     margin: auto;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 65px;
     font-size: xx-large;
-}
-
-#lighttodark, #darktolight{
-    float: right;
-    margin-right: 4%;
+    padding: 5px;
+    border-radius: 50px;
 }
 
 .gone{
     display: none;
+}
+
+.outercontainer, .innercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+
+.innercontainer{
+    flex-direction: column;
+    max-height: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.outercontainer{
+    width: 80%;
+}
+
+div.outercontainer>div.innercontainer>div{
+    border-radius: 25px;
+}
+
+footer{
+    margin-left: 10%;
 }
