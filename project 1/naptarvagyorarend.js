@@ -4,8 +4,6 @@ let kedd=document.getElementById("kedd");
 let szerda=document.getElementById("szerda");
 let csutortok=document.getElementById("csutortok");
 let pentek=document.getElementById("pentek");
-let szombat=document.getElementById("szombat");
-let vasarnap=document.getElementById("vasarnap");
 let moonimg=document.getElementById("lighttodark");
 let sunimg=document.getElementById("darktolight")
 
@@ -22,10 +20,6 @@ function DarkMode(){
     csutortok.classList.add("dark");
     pentek.classList.remove("light");
     pentek.classList.add("dark");
-    szombat.classList.remove("light");
-    szombat.classList.add("dark");
-    vasarnap.classList.remove("light");
-    vasarnap.classList.add("dark");
     moonimg.classList.add("gone");
     sunimg.classList.remove("gone");
 }
@@ -43,10 +37,6 @@ function LightMode(){
     csutortok.classList.add("light");
     pentek.classList.remove("dark");
     pentek.classList.add("light");
-    szombat.classList.remove("dark");
-    szombat.classList.add("light");
-    vasarnap.classList.remove("dark");
-    vasarnap.classList.add("light");
     moonimg.classList.remove("gone");
     sunimg.classList.add("gone");
 }
