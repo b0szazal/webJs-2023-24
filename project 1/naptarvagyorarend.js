@@ -5,7 +5,7 @@ let szerda=document.getElementById("szerda");
 let csutortok=document.getElementById("csutortok");
 let pentek=document.getElementById("pentek");
 let moonimg=document.getElementById("lighttodark");
-let sunimg=document.getElementById("darktolight")
+let sunimg=document.getElementById("darktolight");
 
 function DarkMode(){
     header.classList.remove("light");
@@ -40,4 +40,3 @@ function LightMode(){
     moonimg.classList.remove("gone");
     sunimg.classList.add("gone");
 }
-
