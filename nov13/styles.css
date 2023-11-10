@@ -1,0 +1,25 @@
+body{
+    background-color: #19B3B1;
+    color: #034B61;
+}
+button{
+    background-color: grey;
+    border-radius: 10px;
+    width: fit-content;
+    height: 25px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#container{
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 100px;
+    background-color: grey;
+    padding: 50px;
+    border-radius: 25px;
+}

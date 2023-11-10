@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="container">
     <!--1-->
     <button onclick="TombElsoEleme()">Tömb első elemének kiíratása</button>
     <button onclick="TombMasodikEleme()">Tömb második elemének kiíratása</button>
@@ -17,7 +19,7 @@
     <button onclick="TombOsszesEleme()">Tömb összes elemének kiíratása</button>
     <!--3-->
     <br>
-    <input type="text" id="hozzaadottelem">
+    <input type="text" id="hozzaadottelem" placeholder="Bármit írhat">
     <button onclick="ElemHozzaadasa()">Elem hozzáadása</button>
     <!--4-->
     <br>
@@ -26,6 +28,7 @@
     <br>
     <input type="number" min="0" id="elemindexe" placeholder="(0-tól)">
     <button onclick="ElemEltavolitasa()">Megadott indexű Elem eltávolítása</button>
+    </div>
 </body>
 <script src="feladat.js"></script>
 </html>
