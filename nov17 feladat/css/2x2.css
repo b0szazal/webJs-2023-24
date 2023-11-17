@@ -1,0 +1,22 @@
+.container{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    margin-top: 150px;
+}
+
+.item{
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: yellow;
+}
+
+body{
+    background-color: black; /*mert kiég a szemem*/
+}

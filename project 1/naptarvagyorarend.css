@@ -77,3 +77,7 @@ footer{
     font-weight: bold;
     font-size: larger;
 }
+
+#darktolight, #lighttodark{
+    float: right;
+}
