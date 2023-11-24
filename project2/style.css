@@ -1,0 +1,19 @@
+body{
+    background-color: burlywood;
+}
+#cont{
+    background-color: darkgreen;
+    max-width: 75%;
+    margin: auto;
+    min-height: 500px;
+    margin-top: 50px;
+}
+
+.setup{
+    background-color: black;
+    color: white;
+    margin: auto;
+    max-width: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+}
