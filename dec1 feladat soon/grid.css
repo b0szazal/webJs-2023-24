@@ -1,0 +1,39 @@
+/*#cont2x2{
+    display: grid;
+    max-width: 75%;
+    height: 750px;
+    margin: auto;
+    background-color: black;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+div#cont2x2>div{
+    background-color: white;
+    border: solid black 1px;
+    text-align: center;
+}*/
+
+#cont4x3{
+    display: grid;
+    max-width: 75%;
+    height: 750px;
+    margin: auto;
+    background-color: black;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+div#cont4x3>div{
+    background-color: white;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.mid{
+    grid-column-start: 2;
+}
+
+.newrow{
+    grid-column-start: 1;
+}
