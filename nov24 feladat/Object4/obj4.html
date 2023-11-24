@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object4</title>
+    <style>
+        #a{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 75%;
+        }
+        .card{
+            width: 30%;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin-top: 15px;
+            text-indent: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <script>
+        let heroes = [
+        {firstName: "Ahsoka", lastName: "Tano", job: "padawan"},
+        {firstName: "Boba", lastName: "Fett", job: "fejvadász"},
+        {firstName: "Han", lastName: "Solo", job: "csempész"},
+        {firstName: "Leia", lastName: "Organa", job: "szenátor"},
+        {firstName: "Luke", lastName: "Skywalker", job: "jedi"},
+        {firstName: "Anakin", lastName: "Skywalker", job: "jedi"} ]
+        window.onload=function Render(){
+            let tempLit;
+            let ki="";
+            for(let i=0; i<heroes.length ;i++){
+                tempLit=`
+                <div class="card">
+                    <h2>Név: ${heroes[i].firstName} ${heroes[i].lastName}</h2>
+                    <p>Munka: ${heroes[i].job}</p>
+                </div>
+                `
+                ki+=tempLit;
+            }
+            document.getElementById("a").innerHTML=ki;
+        }
+        /*szorgalmi*/
+       /* window.onload=function Render(){   
+            let tempLit;
+            let ki="<table>";
+            for(let i=0; i<heroes.length ;i++){
+                tempLit=`
+                <tr class="card">
+                    <td>Név: ${heroes[i].firstName} ${heroes[i].lastName}</td>
+                    <td>Munka: ${heroes[i].job}</td>
+                </tr>
+                `
+                ki+=tempLit;
+            }
+            ki+="</table>"
+            document.getElementById("a").innerHTML=ki;
+        }*/
+    </script>
+</body>
+</html>
