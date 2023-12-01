@@ -10,13 +10,14 @@ let generatedpairs={
     5: 0
 };
 let firstselectedindex=-1;
+let input;
 
 function getRandomInt(max) {
     return Math.round(Math.random() * max);
 }
 
 function Start(){
-    let input=parseInt(document.getElementById("input").value);
+    input=parseInt(document.getElementById("input").value);
     if(input<6){
         input=6;
     }
@@ -58,10 +59,17 @@ function Select(index, position){
     document.getElementById(position+".2").classList.add("shown");
     if(firstselectedindex==-1){
         firstselectedindex=index;
+        console.log(firstselectedindex, index);
     }
     else{
         if(index==firstselectedindex){
             
+        }
+        else{
+            document.getElementById(position+".1").classList.remove("hidden");
+            document.getElementById(position+".1").classList.add("shown");
+            document.getElementById(position+".2").classList.remove("shown");
+            document.getElementById(position+".2").classList.add("hidden");
         }
         firstselectedindex=-1;
     }
