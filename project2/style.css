@@ -7,13 +7,24 @@ body{
     margin: auto;
     min-height: 500px;
     margin-top: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-.setup{
+#setup{
     background-color: black;
     color: white;
     margin: auto;
     max-width: fit-content;
     padding: 25px;
     border-radius: 20px;
+}
+
+.card{
+    max-height: fit-content;
+    max-width: fit-content;
+    margin: 10px;
 }
