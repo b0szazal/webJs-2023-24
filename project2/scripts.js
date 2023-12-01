@@ -17,6 +17,12 @@ function getRandomInt(max) {
 
 function Start(){
     let input=parseInt(document.getElementById("input").value);
+    if(input<6){
+        input=6;
+    }
+    else if(input>12){
+        input=12;
+    }
     setup.style.display="none";
     for(let i=6; i<input; i++){
         generatedpairs[i]=0;
@@ -30,8 +36,9 @@ function Start(){
             rng=getRandomInt(input);
             if(generatedpairs[rng]<2){
                 tempLit=`
-                <div class="card" onclick="Select(${rng})">
-                    <img src="kepek/${imgsrc[rng]}">
+                <div class="card" onclick="Select(${rng}, ${i})" id="${i}">
+                    <img src="kepek/forditott.png" id="${i}.1">
+                    <img src="kepek/${imgsrc[rng]}" class="hidden" id="${i}.2">
                 </div>
                 `;
                 ki+=tempLit;
@@ -45,7 +52,10 @@ function Start(){
     cont.innerHTML=ki;
 }
 
-function Select(index){
+function Select(index, position){
+    document.getElementById(position+".1").classList.add("hidden");
+    document.getElementById(position+".2").classList.remove("hidden");
+    document.getElementById(position+".2").classList.add("shown");
     if(firstselectedindex==-1){
         firstselectedindex=index;
     }
