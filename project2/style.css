@@ -1,24 +1,33 @@
 @keyframes hide{
-    0%{
-        opacity: 100;
+    from{
+        opacity: 1;
     }
-    50%{
-        opacity: 50;
-    }
-    100%{
+    to{
         opacity: 0;
     }
 }
 
 @keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes victory{
     0%{
         opacity: 0;
     }
+    25%{
+        opacity: 0.1;
+    }
     50%{
-        opacity: 50;
+        opacity: 0.4;
     }
     100%{
-        opacity: 100;
+        opacity: 1;
     }
 }
 
@@ -76,5 +85,8 @@ body{
     animation-duration: 1000ms;
 }
 
-
+.victoryroy{
+    animation-name: victory;
+    animation-duration: 1000ms;
+}
 

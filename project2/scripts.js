@@ -58,16 +58,6 @@ function Start(){
     cont.innerHTML=ki;
 }
 
-function wait(seconds){
-    let start=new Date();
-    let now;
-    do{
-        now=new Date();
-    }while(now-start<seconds*1000);
-}
-
-
-
 function turn(index, position){
     document.getElementById(position+".1").classList.add("hidden");
     document.getElementById(position+".2").classList.remove("hidden");
@@ -85,8 +75,9 @@ function wrongpair(){
     secondselectedback.classList.remove("hidden");
 }
 
-function reload(){
-    location.reload();
+function gg(){
+    let ki='<img src="kepek/victoryroyale.png" class="victoryroy">';
+    cont.innerHTML=ki;
 }
 
 function Select(index, position){
@@ -104,12 +95,12 @@ function Select(index, position){
         if(index==firstselectedindex){
             foundpairs++;
             if(foundpairs==input){
-                console.log("W");
-                setTimeout(reload, 5000);
+                gg();
+                setTimeout( ()=>location.reload(), 5000);
             }
         }
         else{
-            setTimeout(wrongpair, 3000);
+            setTimeout(wrongpair, 750);
         }
         firstselectedindex=-1;
     }
