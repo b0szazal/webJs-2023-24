@@ -16,21 +16,6 @@
     }
 }
 
-@keyframes victory{
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.1;
-    }
-    50%{
-        opacity: 0.4;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 body{
     background-color: burlywood;
 }
@@ -86,7 +71,8 @@ body{
 }
 
 .victoryroy{
-    animation-name: victory;
+    animation-name: show;
     animation-duration: 1000ms;
+    animation-timing-function: ease-in;
 }
 
