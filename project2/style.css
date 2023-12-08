@@ -25,6 +25,15 @@
 body{
     background-color: burlywood;
 }
+#prevselpair{
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    border-radius: 15px;
+}
 #cont{
     background-color: darkgreen;
     max-width: 75%;
@@ -59,12 +68,12 @@ body{
 
 .hide{
     animation-name: hide;
-    animation-duration: 3000ms;
+    animation-duration: 1000ms;
 }
 
 .shown{
     animation-name: show;
-    animation-duration: 3000ms;
+    animation-duration: 1000ms;
 }
 
 

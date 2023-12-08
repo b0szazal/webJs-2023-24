@@ -11,6 +11,11 @@ let generatedpairs={
 };
 let firstselectedindex=-1;
 let input;
+let firstselectedback;
+let firstselectedcard;
+let secondselectedback;
+let secondselectedcard;
+let foundpairs=0;
 
 function getRandomInt(max) {
     return Math.round(Math.random() * max);
@@ -29,7 +34,7 @@ function Start(){
         generatedpairs[i]=0;
     }
     let tempLit;
-    let ki="";
+    let ki='';
     let rng=0;
     let generated=false;
     for(let i=0; i<input*2 ;i++){
@@ -53,23 +58,58 @@ function Start(){
     cont.innerHTML=ki;
 }
 
-function Select(index, position){
+function wait(seconds){
+    let start=new Date();
+    let now;
+    do{
+        now=new Date();
+    }while(now-start<seconds*1000);
+}
+
+
+
+function turn(index, position){
     document.getElementById(position+".1").classList.add("hidden");
     document.getElementById(position+".2").classList.remove("hidden");
     document.getElementById(position+".2").classList.add("shown");
+}
+
+function wrongpair(){
+    firstselectedcard.classList.remove("shown");
+    firstselectedcard.classList.add("hidden");
+    secondselectedcard.classList.remove("shown");
+    secondselectedcard.classList.add("hidden");
+    firstselectedback.classList.add("shown");
+    firstselectedback.classList.remove("hidden");
+    secondselectedback.classList.add("shown");
+    secondselectedback.classList.remove("hidden");
+}
+
+function reload(){
+    location.reload();
+}
+
+function Select(index, position){
+    setTimeout(turn(index, position), 3000);
     if(firstselectedindex==-1){
+        firstselectedposition=position;
+        firstselectedback=document.getElementById(position+".1");
+        firstselectedcard=document.getElementById(position+".2");
         firstselectedindex=index;
         console.log(firstselectedindex, index);
     }
     else{
+        secondselectedback=document.getElementById(position+".1");
+        secondselectedcard=document.getElementById(position+".2");
         if(index==firstselectedindex){
-            
+            foundpairs++;
+            if(foundpairs==input){
+                console.log("W");
+                setTimeout(reload, 5000);
+            }
         }
         else{
-            document.getElementById(position+".1").classList.remove("hidden");
-            document.getElementById(position+".1").classList.add("shown");
-            document.getElementById(position+".2").classList.remove("shown");
-            document.getElementById(position+".2").classList.add("hidden");
+            setTimeout(wrongpair, 3000);
         }
         firstselectedindex=-1;
     }
