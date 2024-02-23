@@ -12,10 +12,3 @@ table, form{
 td, th{
     padding: 20px;
 }
-
-.gone{
-    opacity: 0;
-}
-.shown{
-    opacity: 1;
-}
