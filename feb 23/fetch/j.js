@@ -27,7 +27,7 @@ function ShowUserData(user){
     ki+="</tr>";
     document.getElementById("table").innerHTML+=ki;
     document.getElementById("table").style.opacity=1;
-    document.getElementById("div").style.opacity=0;
+    document.getElementById("div").style.display="none";
 }
 
 document.getElementById("table").style.opacity=0;
