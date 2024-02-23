@@ -1,0 +1,21 @@
+*{
+    color: white;
+    background-color: black;
+}
+table, form{
+    margin: auto;
+    border: 1px solid white;
+    max-width: fit-content;
+    margin-top: 250px;
+    padding: 20px;
+}
+td, th{
+    padding: 20px;
+}
+
+.gone{
+    opacity: 0;
+}
+.shown{
+    opacity: 1;
+}
