@@ -12,7 +12,8 @@ function loadImage() {
     let id = loadedImage.getAttribute("data-id");
 
     // A kép URL-je  ('https://dev.me/products/image-placeholder')
-    const imageUrl = `https://via.assets.so/movie.png?id=${id}`;
+    const imageUrl = `https://via.assets.so/game.jpg?id=${id}`;
+    /*const imageUrl = `https://via.assets.so/movie.png?id=${id}`;*/
 
     // Létrehozunk egy Promise-t a kép betöltésére
     const imagePromise = new Promise((resolve, reject) => {
@@ -20,6 +21,7 @@ function loadImage() {
         image.onload = function () {
             // Sikeres betöltés esetén
             resolve(imageUrl);
+            console.log(id);
         };
         // vagy arrow függvénnyel
         // image.onload = () => resolve(imageUrl);
@@ -31,7 +33,7 @@ function loadImage() {
         // vagy arrow függvénnyel
         // image.onerror = () => reject('Hiba a kép betöltése során.');
 
-        loadedImage.setAttribute("data-id", id + 1);
+        loadedImage.setAttribute("data-id", +id + 1);
         image.src = imageUrl;
     });
 
